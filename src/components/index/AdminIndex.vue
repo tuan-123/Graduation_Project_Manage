@@ -61,10 +61,13 @@
             this.getRealData();
             this.createWebSocket(window.sessionStorage.getItem("userId"));
         },
+        destroyed(){
+            GLOBAL.webSocket = null;
+        },
         methods:{
             createWebSocket(userId){
                 try{
-                    if(GLOBAL.webSocket === null || true){
+                    if(GLOBAL.webSocket === null){
                         if('WebSocket' in window){
                             GLOBAL.webSocket = new WebSocket(GLOBAL.webSocketUrl + userId);
                         }else if('MozWebSocket' in window){
