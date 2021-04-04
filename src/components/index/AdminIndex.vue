@@ -64,7 +64,7 @@
         methods:{
             createWebSocket(userId){
                 try{
-                    if(GLOBAL.webSocket === null){
+                    if(GLOBAL.webSocket === null || true){
                         if('WebSocket' in window){
                             GLOBAL.webSocket = new WebSocket(GLOBAL.webSocketUrl + userId);
                         }else if('MozWebSocket' in window){
