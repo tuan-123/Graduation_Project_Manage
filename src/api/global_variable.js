@@ -8,7 +8,7 @@ const webSocketUrl = 'ws://127.0.0.1:8087/webSocket/admin/';
 const webSocket = null;
 const webSocketTimeOutObj = null;
 const webSocketServerTimeOutObj = null;
-const webSocketTimeOut = 15000;
+const webSocketTimeOut = 8000;
 const lockReconnect = false;
 
 
