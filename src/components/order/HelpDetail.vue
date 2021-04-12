@@ -84,7 +84,7 @@
       </div>
 
       <div class="item">
-        <span class="title">评 论：</span>
+        <span class="title">留 言：</span>
         <span  class="content" v-if="help.commentVoList.length === 0">无</span>
         <span v-if="help.commentVoList !== null && help.commentVoList.length !== 0" v-for="(item,index) in help.commentVoList" :key="index">
             <div style="margin-left: 140px;margin-bottom: 10px;">

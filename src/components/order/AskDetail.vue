@@ -4,7 +4,7 @@
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/adminIndex' }">首页</el-breadcrumb-item>
         <el-breadcrumb-item>订单列表</el-breadcrumb-item>
-        <el-breadcrumb-item :to="{ path: '/askOrder'}">提 问</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/askOrder'}">交 流</el-breadcrumb-item>
         <el-breadcrumb-item>详 情</el-breadcrumb-item>
       </el-breadcrumb>
 
@@ -44,7 +44,7 @@
         </div>
 
         <div class="item">
-          <span class="title">评 论：</span>
+          <span class="title">留 言：</span>
           <span  class="content" v-if="ask.comments.length === 0">无</span>
           <span v-if="ask.comments !== null && ask.comments.length !== 0" v-for="(item,index) in ask.comments" :key="index">
             <div style="margin-left: 140px;margin-bottom: 10px;">

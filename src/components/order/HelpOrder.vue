@@ -21,7 +21,7 @@
 
       <el-table :data="helpList" border stripe :default-sort="{prop:'createTime',order:'descending'}">
         <el-table-column type="index"></el-table-column>
-        <el-table-column label="流水号" prop="id"></el-table-column>
+        <el-table-column label="单号" prop="id"></el-table-column>
         <el-table-column label="发布者" prop="userId"></el-table-column>
         <el-table-column label="帮代物品" prop="helpArticle"></el-table-column>
         <el-table-column label="帮代状态" prop="helpState" :formatter="helpStateFormatter" ></el-table-column>

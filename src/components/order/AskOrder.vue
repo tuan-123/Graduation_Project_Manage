@@ -4,7 +4,7 @@
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/adminIndex' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>订单列表</el-breadcrumb-item>
-      <el-breadcrumb-item>提 问</el-breadcrumb-item>
+      <el-breadcrumb-item>交 流</el-breadcrumb-item>
     </el-breadcrumb>
     <!--卡片视图-->
     <el-card>
@@ -21,7 +21,7 @@
 
       <el-table :data="askList" border stripe :default-sort="{prop:'createTime',order:'descending'}">
         <el-table-column type="index"></el-table-column>
-        <el-table-column label="流水号" prop="id"></el-table-column>
+        <el-table-column label="单号" prop="id"></el-table-column>
         <el-table-column label="发布者" prop="userId"></el-table-column>
         <el-table-column label="内容" prop="content"></el-table-column>
         <el-table-column label="发布时间" prop="createTime" :formatter="creatTimeFormatter" sortable></el-table-column>

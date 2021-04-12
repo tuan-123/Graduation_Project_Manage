@@ -77,7 +77,7 @@
       </div>
 
       <div class="item">
-        <span class="title">评 论：</span>
+        <span class="title">留 言：</span>
         <span  class="content" v-if="idle.comments.length === 0">无</span>
         <span v-if="idle.comments !== null && idle.comments.length !== 0" v-for="(item,index) in idle.comments" :key="index">
             <div style="margin-left: 140px;margin-bottom: 10px;">

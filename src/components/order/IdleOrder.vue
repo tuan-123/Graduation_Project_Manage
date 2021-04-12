@@ -19,7 +19,7 @@
         </el-row>
         <el-table :data="idleList" border stripe :default-sort="{prop:'createTime',order:'descending'}">
           <el-table-column type="index"></el-table-column>
-          <el-table-column label="流水号" prop="id"></el-table-column>
+          <el-table-column label="单号" prop="id"></el-table-column>
           <el-table-column label="发布者" prop="userId"></el-table-column>
           <el-table-column label="物品" prop="title"></el-table-column>
           <el-table-column label="标签" prop="tab" :formatter="tabFormatter"></el-table-column>

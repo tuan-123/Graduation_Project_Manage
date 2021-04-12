@@ -13,7 +13,7 @@
       <div class="smContainer div2">
         <div style="float:left;position:relative;left: 140px;top: 100px;">
           <el-image :src="askImg"></el-image>
-          <div style="position:relative;left:-15px;top: 30px;font-size: 30px">提问发布数</div>
+          <div style="position:relative;left:-15px;top: 30px;font-size: 30px">交流发布数</div>
         </div>
         <div id="askCount" class="countSize1">
           {{askCount}}
